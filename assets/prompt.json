@@ -23,7 +23,19 @@
         "width" : 1024,
         "output_num" : 1
     },
-    "2" :
+    "2":
+    {
+        "task_type": "conditioned_cref",
+        "prompts" : "depth",
+        "images" : [
+            "assets/images/depth.png",
+            "assets/images/girl.png"
+        ],
+        "height" : 1024,
+        "width" : 1024,
+        "output_num" : 1
+    },
+    "3" :
     {
         "task_type": "sref",
         "prompts" : "",
@@ -35,7 +47,7 @@
         "width" : 1024,
         "output_num" : 1
     },
-    "3" :
+    "4" :
     {
         "task_type": "multiview",
         "prompts" : "1. The view slightly shifts to the left. 2. The camera looks up to the sky. 3. The view zooms out.",
@@ -46,7 +58,7 @@
         "width" : 640,
         "output_num" : 3
     },
-    "4":
+    "5":
     {
         "task_type": "storyboard",
         "prompts" : "Vintage film: 1. Hepbrun carrying the yellow bag, walking elegantly in the street of a beautiful Italian small town. 2. She holds a pose to the camera, lifts up the yellow bag. 3. After filming, Hepburn is crowded by a group of fans.",

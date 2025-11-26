@@ -31,7 +31,7 @@ def get_prompt(outnum: int, task_type: str, instr: str) -> str:
         return system_prompt + instruction
 
     elif task_type == "conditioned_cref":
-        signal_type, instruction = instruction.split(": ", 1)
+        signal_type = instruction
         return system_prompt + CONDITIONED_CREATIVE_PROMPT.format(signal=signal_type)
 
     elif task_type == "sref":
