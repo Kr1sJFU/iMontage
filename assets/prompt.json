@@ -1,13 +1,61 @@
 {
+    "0" :
+    {
+        "task_type": "image_editing",
+        "prompts" : "Change the material of the lava to silver.",
+        "images" : [
+            "assets/images/llava.png"
+        ],
+        "height" : 416,
+        "width" : 640,
+        "output_num" : 1
+    },
+    "1" :
+    {
+        "task_type": "cref",
+        "prompts" : "Confucius from the first image, Moses from the second image and Solon from the last image are having a debate in front of the supreme court.",
+        "images" : [
+            "assets/images/Confucius.png",
+            "assets/images/Moses.png",
+            "assets/images/Solon.png"
+        ],
+        "height" : 1024,
+        "width" : 1024,
+        "output_num" : 1
+    },
     "2" :
     {
+        "task_type": "sref",
+        "prompts" : "",
+        "images" : [
+            "assets/images/woman.png",
+            "assets/images/joker.png"
+        ],
+        "height" : 1024,
+        "width" : 1024,
+        "output_num" : 1
+    },
+    "3" :
+    {
         "task_type": "multiview",
-        "prompts" : "1. The view zooms in. 2. The camera looks up to the sky. 3. The view zooms out.",
+        "prompts" : "1. The view slightly shifts to the left. 2. The camera looks up to the sky. 3. The view zooms out.",
         "images" : [
             "assets/images/city.png"
         ],
-        "height" : 427,
+        "height" : 416,
         "width" : 640,
+        "output_num" : 3
+    },
+    "4":
+    {
+        "task_type": "storyboard",
+        "prompts" : "Vintage film: 1. Hepbrun carrying the yellow bag, walking elegantly in the street of a beautiful Italian small town. 2. She holds a pose to the camera, lifts up the yellow bag. 3. After filming, Hepburn is crowded by a group of fans.",
+        "images" : [
+            "assets/images/Hepburn.png",
+            "assets/images/yellow_bag.png"
+        ],
+        "height" : 604,
+        "width" : 1024,
         "output_num" : 3
     }
 }

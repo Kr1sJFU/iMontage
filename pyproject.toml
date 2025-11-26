@@ -18,9 +18,8 @@ dependencies = [
     "scipy", "six", "h5py",
 
     # Machine Learning & Transformers
-    "transformers", "tokenizers", "sentencepiece",
-    "timm", "peft", "diffusers", "bitsandbytes",
-    "torch", "torchvision",
+    "transformers==4.46.3", "tokenizers==0.20.3", "sentencepiece",
+    "timm", "peft==0.17.1", "diffusers==0.31.0", "bitsandbytes",
 
     # Acceleration & Optimization
     "accelerate",
@@ -36,17 +35,9 @@ dependencies = [
     "tqdm", "PyYAML", "protobuf",
     "gradio", "moviepy", "flask",
     "flask_restful", "aiohttp", "huggingface_hub", "cloudpickle",
-    # System & Monitoring Tools
-    "gpustat", "watch", "remote-pdb",
 
     # Kernel & Packaging
     "wheel",
-
-    # Training Dependencies
-    "torchdata",
-    "pyarrow",
-    "datasets",
-    "av==13.1.0",
 ]
 
 [tool.uv]
