@@ -53,9 +53,10 @@ pip install "flash-attn==2.7.4.post1" --no-build-isolation
 
 ```
 
-(Alternative) We train and evaluate our model with FlashAttention-3.  
-If you are working on NVIDIA H100/H800 GPUs, you can follow the official guidance [here](https://github.com/Dao-AILab/flash-attention?tab=readme-ov-file#flashattention-3-beta-release).
-But you have to replace code in [fastvideo/models/flash_attn_no_pad.py](https://github.com/Kr1sJFU/iMontage/blob/main/fastvideo/models/flash_attn_no_pad.py)
+(**Note**) We train and evaluate our model with FlashAttention-3, so the inference quality might be suboptimal with flash-attn-2. 
+
+If you are working on NVIDIA H100/H800 GPUs and want to get the best performance of our model, you can follow the official guidance of FlashAttention-3 [here](https://github.com/Dao-AILab/flash-attention?tab=readme-ov-file#flashattention-3-beta-release).
+And you have to replace code in [fastvideo/models/flash_attn_no_pad.py](https://github.com/Kr1sJFU/iMontage/blob/main/fastvideo/models/flash_attn_no_pad.py)
 
 
 After install torch and flash attention, you can install all other dependencies following this command:
