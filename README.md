@@ -45,7 +45,7 @@ conda create -n iMontage python=3.10
 conda activate iMontage
 
 # NOTE Choose torch version compatible with your CUDA
-pip install torch==2.6.0+cu126 torchvision==0.21.0+cu126 torchaudio==2.6.0+cu126
+pip install torch==2.6.0+cu126 torchvision==0.21.0+cu126 torchaudio==2.6.0+cu126 https://download.pytorch.org/whl/cu126
 
 # Install Flash Attention 2
 # NOTE Also choose the correct version compatible with installed torch
